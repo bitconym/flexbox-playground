@@ -1,0 +1,8 @@
+.sass-cache
+node_modules
+
+dist
+
+*.sublime-workspace
+
+Thumbs.db

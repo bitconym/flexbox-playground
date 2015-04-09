@@ -1,0 +1,110 @@
+@import "compass";
+
+// Flex container
+.flexbox-parent {
+  @include display-flex;
+  background: #FFD54F;
+  overflow: hidden;
+  width: 100%;
+  padding: 3px;
+  min-height: 550px;
+  max-height: 1000px;
+
+  // Flex items
+  > div {
+    display: inline-block;
+    background: white;
+    overflow: hidden;
+    margin: 3px;
+    padding: 5px;
+
+    .child-controls {
+      margin-top: 7px;
+    }
+  }
+}
+
+.child-number {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #FFB300;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 3px;
+  text-align: center;
+  @include border-radius(50%);
+  float: left;
+}
+
+.code {
+  font-family: Consolas, "Courier New", Monospace;
+  font-size: 15px;
+}
+
+.remove-child {
+  background: transparent;
+  color: #FF6F00;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #FF8F00;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.right-padding {
+  padding-right: 15px;
+}
+
+h3 {
+  margin: 0 0 10px 0 !important;
+}
+
+p {
+  margin: 0 0 10px 0 !important;
+  line-height: 1.4em !important;
+}
+
+md-input-container {
+  padding: 0 0 5px 0 !important;
+
+  .md-input {
+    padding: 0 !important;
+    line-height: 1em !important;
+  }
+}
+
+md-select {
+  margin-top: 0 !important;
+
+  .md-select-label {
+    padding-top: 2px !important;
+    padding-bottom: 4px !important;
+  }
+}
+
+md-radio-button {
+  margin: 5px 10px !important;
+}
+
+md-divider {
+  margin: 10px 0 !important;
+}
