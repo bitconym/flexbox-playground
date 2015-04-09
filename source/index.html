@@ -14,8 +14,8 @@
   <body ng-controller="AppCtrl">
     <!-- Here's the main container -->
     <md-content class="md-padding">
-      <div layout="row" layout-sm="column">
-        <div flex="66" flex-sm="100" class="right-padding">
+      <div layout-gt-md="row" layout="column">
+        <div flex-gt-md="66" flex="100" class="right-padding">
           <h3>Children Width</h3>
           <div layout="row" layout-align="center center" class="code">
             <div flex="15">width: {{children_width}}%</div>
