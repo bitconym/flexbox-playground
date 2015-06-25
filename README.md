@@ -22,6 +22,8 @@ And from the project's root install the dependencies with:
 
 `npm install`
 
+After it's done, this will attempt to run `bundle` in the current dir to install the `compass` gem defines as a dependency in the `Gemfile`. Without the Ruby `compass` gem, `gulp build` will fail.
+
 ## Build
 
 To build the code just run `gulp` from the command line. This will produce functional version in the `dist` folder.
